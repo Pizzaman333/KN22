@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КН-22</title>
+    <link rel="icon" type="image/png" href="./images/logo.png " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="index">
+    <!-- <header class="header" id="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="./index.html" class="header__logo1">
+            <img class="header__logoIcon" src="./images/logo.png" alt="logo"
+          /></a>
+          <p class="header__text">Ласкаво просимо на сайт групи КН-22!</p>
+          <button class="header__button" data-menu-open>
+            <svg class="header__menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header> -->
+    <main class="main">
+      <section class="offer">
+        <div class="container">
+          <h1 class="offer__title">Ласкаво просимо на сайт групи КН-22!</h1>
+          <button class="offer__button" type="button" data-modal-open>
+            Дізнатись більше
+          </button>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h2 class="features__mainTitle">Ми:</h2>
+          <ul class="features__list">
+            <li class="features__item" data-aos="fade-up-right">
+              <article class="features__article">
+                <div class="features__wrap">
+                  <img
+                    class="features__icon"
+                    src="./images/creativity.png"
+                    alt=""
+                  />
+                </div>
+                <h3 class="features__title">Креативні</h3>
+                <p class="features__text">
+                  Студенти нашої групи постійно генерують нові ідеї та шукають
+                  інноваційні рішення для різних викликів.
+                </p>
+              </article>
+            </li>
+            <li class="features__item" data-aos="fade-up">
+              <article class="features__article">
+                <div class="features__wrap">
+                  <svg class="features__icon">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+
+                <h3 class="features__title">Пунтктуальні</h3>
+                <p class="features__text">
+                  Час – це цінний ресурс, і ми вміємо ним користуватися. Зазвичай виконуємо всі завдання вчасно та дотримуємося дедлайнів.
+                </p>
+              </article>
+            </li>
+            <li class="features__item" data-aos="fade-up">
+              <article class="features__article">
+                <div class="features__wrap">
+                  <svg class="features__icon">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+
+                <h3 class="features__title">Технологічно просунуті</h3>
+                <p class="features__text">
+                  Ми використовуємо найновіші технології та інструменти, щоб залишатися на передовій ІТ-світу.
+                </p>
+              </article>
+            </li>
+            <li class="features__item" data-aos="fade-up-left">
+              <article class="features__article">
+                <div class="features__wrap">
+                  <svg class="features__icon">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+
+                <h3 class="features__title">Навчаємось</h3>
+                <p class="features__text">
+                  Ми постійно навчаємось та вдосконалюємо свої навички, щоб бути готовими до майбутніх викликів.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <h2 class="service__title" data-aos="fade-down">Чим ми займаємося</h2>
+          <ul class="service__list">
+            <li class="service__item" data-aos="zoom-out-right">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-service1@1x.webp 1x,
+                    ./images/desktop/desktop-service1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img class="service__image" src="" alt="img" />
+              </picture>
+              <div class="service__bg">
+                <h3 class="service__subtitle">Десктопні додатки</h3>
+              </div>
+            </li>
+            <li class="service__item" data-aos="zoom-out">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-service2@1x.webp 1x,
+                    ./images/desktop/desktop-service2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img class="service__image" src="" alt="img" />
+              </picture>
+              <div class="service__bg">
+                <h3 class="service__subtitle">Мобільні додатки</h3>
+              </div>
+            </li>
+            <li class="service__item" data-aos="zoom-out-left">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-service3@1x.webp 1x,
+                    ./images/desktop/desktop-service3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img class="service__image" src="" alt="img" />
+              </picture>
+              <div class="service__bg">
+                <h3 class="service__subtitle">Дизайнерські рішення</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="team__title" data-aos="fade-down" data-aos-duration="1000">
+            Наша команда
+          </h2>
+          <ul class="team__list">
+            <li
+              class="team__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1300"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-team1@1x.webp 1x,
+                    ./images/desktop/desktop-team1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-team1@1x.webp 1x,
+                    ./images/tablet/tablet-team1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-team1@1x.webp 1x,
+                    ./images/mobile/mobile-team1@2x.webp 2x
+                  "
+                  media="(min-width: 310px)"
+                />
+                <img class="team__img" src="" alt="human" />
+              </picture>
+              <div class="team__wrap">
+                <h3 class="team__mate">Ігор Дем'яненко</h3>
+                <h3 class="team__subtitle">Product Designer</h3>
+              </div>
+              <ul class="soc__list">
+                <li class="soc__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://facebook.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="team__item"
+              data-aos="fade-down-right"
+              data-aos-duration="1300"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-team2@1x.webp 1x,
+                    ./images/desktop/desktop-team2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-team2@1x.webp 1x,
+                    ./images/tablet/tablet-team2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-team2@1x.webp 1x,
+                    ./images/mobile/mobile-team2@2x.webp 2x
+                  "
+                  media="(min-width: 310px)"
+                />
+                <img class="team__img" src="" alt="human" />
+              </picture>
+              <div class="team__wrap">
+                <h3 class="team__mate">Ольга Рєпіна</h3>
+                <h3 class="team__subtitle">Frontend Developer</h3>
+              </div>
+              <ul class="soc__list">
+                <li class="soc__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://facebook.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="team__item"
+              data-aos="fade-down-left"
+              data-aos-duration="1300"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-team3@1x.webp 1x,
+                    ./images/desktop/desktop-team3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-team3@1x.webp 1x,
+                    ./images/tablet/tablet-team3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-team3@1x.webp 1x,
+                    ./images/mobile/mobile-team3@2x.webp 2x
+                  "
+                  media="(min-width: 310px)"
+                />
+                <img class="team__img" src="" alt="human" />
+              </picture>
+              <div class="team__wrap">
+                <h3 class="team__mate">Микола Тарасов</h3>
+                <h3 class="team__subtitle">Marketing</h3>
+              </div>
+              <ul class="soc__list">
+                <li class="soc__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://facebook.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="team__item"
+              data-aos="fade-up-left"
+              data-aos-duration="1300"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desktop-team4@1x.webp 1x,
+                    ./images/desktop/desktop-team4@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-team4@1x.webp 1x,
+                    ./images/tablet/tablet-team4@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-team4@1x.webp 1x,
+                    ./images/mobile/mobile-team4@2x.webp 2x
+                  "
+                  media="(min-width: 310px)"
+                />
+                <img class="team__img" src="" alt="human" />
+              </picture>
+              <div class="team__wrap">
+                <h3 class="team__mate">Михайло Єрмаков</h3>
+                <h3 class="team__subtitle">UI Designer</h3>
+              </div>
+              <ul class="soc__list">
+                <li class="soc__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://facebook.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    class="soc__link"
+                  >
+                    <svg class="soc__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer id="contacts" class="footer">
+      <div class="container footer__wrap">
+        <div class="footer__contcts" data-aos="fade-right">
+          <a href="index.html" class="footer__logo1"
+            ><span class="footer__logo2">КН-22</span></a
+          >
+          <address class="footer__address">
+            м. Київ, пр-т Лесі Українки, 26
+          </address>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__info" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="footer__info" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__soc" data-aos="fade-up">
+          <h4 class="footer__title">приєднуйтесь</h4>
+          <ul class="soc__list">
+            <li class="soc__item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="soc__link"
+              >
+                <svg class="soc__icon footer__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc__item">
+              <a href="https://twitter.com/" target="_blank" class="soc__link">
+                <svg class="soc__icon footer__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc__item">
+              <a href="https://facebook.com/" target="_blank" class="soc__link">
+                <svg class="soc__icon footer__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc__item">
+              <a href="https://linkedin.com/" target="_blank" class="soc__link">
+                <svg
+                  class="soc__icon footer__icon"
+                  width="23.75px"
+                  height="23/75px"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__circle" data-modal-close>
+          <svg class="modal__close" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">
+          Тут буде багато цікавої інформації про нашу групу, та про те, чим ми
+          займаємось
+        </h3>
+        <p class="modal__text">
+          Ми - студенти групи КН-22 Природничо-гуманітарного фахового коледжу
+          Державний вищого навчального закладу "Ужгородський національний
+          університет".
+        </p>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          officiis non ea animi accusamus incidunt tenetur omnis amet provident
+          cum. Inventore sed natus magni tempore.
+        </p>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam!
+        </p>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+          quas, quaerat suscipit natus iste, sapiente, saepe molestias error
+          aperiam esse totam ratione rerum eum! Repudiandae, assumenda hic
+          doloribus cum nisi reiciendis minus velit asperiores labore odit saepe
+          ut eos quos?
+        </p>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          aspernatur! Illo dolorum eum molestias voluptatem.
+        </p>
+        <p class="modal__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <a href="#top" class="scrolltop">
+      <svg class="scrolltop__icon" width="21.68px" height="30.91px">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </a>
+    <div class="menu is-hidden" data-menu>
+      <button class="menu__button" type="button" data-menu-close>
+        <svg class="menu__icon">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link menu__active">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link">Контакти</a>
+        </li>
+      </ul>
+      <div class="menu__wrap">
+        <a class="menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="menu__mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <ul class="menu__socials">
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Instagram</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Twitter</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Facebook</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

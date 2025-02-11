@@ -1,0 +1,191 @@
+.footer {
+  padding: 60px 0;
+  background-color: $background-color;
+overflow: hidden;
+
+  &__icon {
+    fill: $white-color;
+    transition: fill $st-animation;
+  }
+
+  &__soc {
+    
+    @media  screen and (min-width: 768px) {
+      padding-top: 5px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      padding-top: 12px;
+      margin-left: 70px;
+     }
+  }
+
+  &__logo1 {
+    @include logo($color: $highlight-color);
+  }
+
+  &__logo2 {
+    @include logo;
+  }
+
+  &__contcts {
+    @include flexbox();
+    flex-direction: column;
+
+    @media  screen and (min-width: 768px) {
+      margin-left: 61px;
+      margin-right: 165px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      display: block;
+      margin: 0;
+     }
+  }
+
+  &__address {
+    color: $white-color;
+    @extend %small_text;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+    font-style: normal;
+    margin-bottom: 9px;
+    margin-top: 20px;
+  }
+
+  &__list {
+    @include flexbox($align: none, $justify: none);
+    gap: 9px;
+    flex-direction: column;
+  }
+
+  &__info {
+    color: $lightwhite-color;
+    @extend %small_text;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+    transition: color $st-animation;
+
+    &:hover {
+      color: $highlight-color;
+    }
+
+    &:focus {
+      color: $highlight-color;
+      outline: none;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: $white-color;
+    @extend %smallbold_text;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media  screen and (min-width: 1200px) {
+text-align: left;
+     }
+  }
+
+  &__wrap {
+    @include flexbox($align: none, $justify: none);
+    gap: 60px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    @media  screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 0;
+     }
+  
+     
+  }
+
+  &__subscribe {
+    @media  screen and (min-width: 768px) {
+      margin-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      padding-top: 12px;
+      margin: 0 0 0 93px;
+     }
+    
+  }
+
+  &__input {
+    width: 450px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px;
+    color: $white-color;
+    transition: border-color $st-animation;
+
+    @media  screen and (max-width: 480px) {
+      width: 100%;
+    }
+
+    @media  screen and (min-width: 1200px) {
+      width: 358px;
+     }
+  }
+
+  &__input:hover {
+    border-color: $highlight-color;
+  }
+
+  &__input:focus {
+    border-color: $highlight-color;
+    outline: none;
+  }
+
+  &__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.48px;
+  }
+
+  &__btn {
+    color: $white-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 187.5%;
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: $highlight-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    @include flexbox($justify: none);
+    gap: 10px;
+    padding: 10px 28px;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+  }
+
+  &__form {
+    @include flexbox;
+    gap: 20px;
+    flex-direction: column;
+  
+     @media  screen and (min-width: 1200px) {
+      gap: 12px;
+      flex-direction: row;
+     }
+  }
+
+  &__subscribe__icon {
+    fill: $white-color;
+  }
+}

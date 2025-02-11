@@ -1,0 +1,19 @@
+@mixin flexbox($align: center, $justify: center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin logo($color: $white-color){
+    color: $color;
+    font-family: $logo-font;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+
+    
+       @media  screen and (min-width: 1200px) {
+        font-size: 26px;
+        letter-spacing: 0.78px;
+       }
+}
