@@ -108,12 +108,12 @@ height: 260px;
   
      @media  screen and (min-width: 1200px) {
       flex-direction: row;
+
      }
 }
 
-.curator-item {
-  width: 370px;
-}
+
+
 
 
 .team-list {
@@ -224,3 +224,7 @@ height: 260px;
   fill: rgba(175, 177, 184, 1);
   transition: fill var(--st-animation);
 }
+
+.and-item {
+  display: none;
+  }
