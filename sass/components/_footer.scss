@@ -188,4 +188,10 @@ text-align: left;
   &__subscribe__icon {
     fill: $white-color;
   }
+
+  &__image {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

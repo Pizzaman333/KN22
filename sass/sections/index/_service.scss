@@ -30,10 +30,16 @@
   &__image {
     width: 370px;
     height: 294px;
+    object-fit: cover;
+
   }
 
   &__item {
     position: relative;
+    width: 370px;
+    height: 294px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   &__bg {
